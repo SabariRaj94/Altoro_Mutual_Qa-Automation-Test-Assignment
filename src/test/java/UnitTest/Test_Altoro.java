@@ -34,7 +34,7 @@ public class Test_Altoro extends LoginPage {
 		fundTransfer();
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 5, dependsOnMethods = "altoro_FundTransfer")
 	public void altoro_ViewRecentTransaction() {
 		viewRecentTransaction();
 	}
